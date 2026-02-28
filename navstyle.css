@@ -6,6 +6,11 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
 body {
   background-color: #e9e9e9;
   display: flex;
@@ -32,19 +37,22 @@ body {
 }
 
 .logoCircle {
-  width: 48px;
-  height: 80px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
+  width: 60px;              
+  height: 60px;              
+  border-radius: 50%;     
+  overflow: hidden;        
+  border: 2px solid #333;   
+  display: flex;             
   align-items: center;
   justify-content: center;
 }
-
-.logoIcon {
-  font-size: 20px;
-  font-weight: 900;
+.logoCircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
 
 /* Nav Links */
 .navLinks {
@@ -63,10 +71,19 @@ body {
   opacity: 0.6;
 }
 
-.email {
-  background-color: #f2f2f2;
-  padding: 10px 22px;
-  border-radius: 40px;
+button {
+  background-color: #032755;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
   font-size: 16px;
-  color: #000;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  opacity: 0.8;
 }

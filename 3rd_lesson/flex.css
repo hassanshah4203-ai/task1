@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: chocolate;
+
+}
+
+.first-flex {
+    display: flex;
+    justify-content: center;
+    color: brown;
+    margin-top: 30px;
+    background-color: aqua;
+    border-radius: 30px;
+
+}
+
+.second-inlineflex{
+    display: inline-flex;
+    color: blue;
+    background-color: burlywood;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.random{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 40px;
+}

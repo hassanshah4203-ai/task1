@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Increment Counter</title>
+        <link rel="stylesheet" href="Increment.css">
+    </head>
+
+    <body>
+        
+    <main>
+        <h1>Increment Counter</h1>
+
+     <section class="flex-container first-flex">
+        <h2>Increment By Eight</h2>
+        <p id="counteight">0</p>
+        <button id="increaseeightbtn">Increase</button>
+     </section>
+
+            <section class="flex-container second-flex">
+                 <h2>Increment By Three</h2>
+                 <p id="increasethree">0</p>
+                 <button onclick="
+                 let value = document.getElementById('increasethree');
+                 value.textContent = Number(value.textContent) + 3;">Increase</button>
+            </section>
+
+                <section class="flex-container third-flex">
+                    <h2>Increment By Five</h2>
+                    <p id="increasefive">0</p>
+                    <button id="increasefivebtn">Increase</button>
+                </section>
+
+                    <section class="flex-container fourth-flex">
+                        <h2>Decrement By Five</h2>
+                        <p id="decreasefive">0</p>
+                        <button id="decreasefivebtn">Decrease</button>
+                    </section>
+
+     <script src="script.js"></script>
+
+     <script>
+        let counteight = 0;
+
+        const counteightDisplay = document.getElementById("counteight");
+        const increaseeightbtn = document.getElementById("increaseeightbtn");
+
+        increaseeightbtn.addEventListener("click", function() {
+            counteight = counteight + 8;
+            counteightDisplay.textContent = counteight;
+        });
+
+        let decreasefive = 0;
+
+        const decreasefiveDisplay = document.getElementById("decreasefive");
+        const decreasefivebtn = document.getElementById("decreasefivebtn");
+
+        decreasefivebtn.addEventListener("click", function() {
+            decreasefive = decreasefive - 5;
+            decreasefiveDisplay.textContent = decreasefive;
+        });
+     </script>
+
+    </main>
+
+    </body>
+</html>

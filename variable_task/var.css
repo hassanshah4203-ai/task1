@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(to right, brown, red);
+    padding: 20px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.flex-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.flex-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.first-flex {
+    color: rgb(207, 190, 190);
+    background-color: rgb(29, 145, 49);
+    display: flex;
+    flex-direction: column;
+}
+.first-flex label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(221, 200, 200);
+}
+.first-flex input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.first-flex button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.first-flex button:hover {
+   opacity: 0.8;
+    transform: translateY(3px);
+}
+.second-flex {
+    color: blue;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+}
+.second-flex h2 {
+    margin-right: 20px;
+}
+.second-flex button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.second-flex button:hover {
+    opacity: 0.8;
+    transform: translateY(3px);
+}
+
+.third-flex {
+    color: white;
+    background-color: rgb(240, 7, 7);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}   
+.third-flex h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.third-flex input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.third-flex button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(15, 3, 3);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.third-flex button:hover {
+    opacity: 0.8;
+    transform: translateY(3px);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(27, 26, 18, 0.719);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.result h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.result p {
+    font-size: 1.2rem;
+}

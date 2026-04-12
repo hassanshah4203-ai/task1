@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Increment Counter</title>
+        <link rel="stylesheet" href="Increment.css">
+    </head>
+    <body>
+        <header>
+            <h1>Increment Counter</h1>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Counter</h2>
+                <label for="counter">Counter Value:</label>
+                <input type="text"  id="counter" placeholder="Enter Number" required>
+                <button id="incrementBtn">Increment By 5</button>
+            </section>
+            <section>
+                <h2>Result</h2>
+                <output id="result">Result will appear here</output>
+            </section>
+
+            <script>
+                const counterInput = document.getElementById("counter");
+                const incrementBtn = document.getElementById("incrementBtn");
+                const resultOutput = document.getElementById("result");
+
+                incrementBtn.addEventListener("click", function() {
+                    const counterValue = parseInt(counterInput.value);
+                    if (!isNaN(counterValue)) {
+                        const incrementedValue = counterValue + 5;
+                        resultOutput.textContent = `Incremented Value: ${incrementedValue}`;
+                    } else {
+                        resultOutput.textContent = "Please enter a valid number.";
+                    }
+                }); 
+            </script>
+

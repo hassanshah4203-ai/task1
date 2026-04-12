@@ -1,0 +1,47 @@
+.hero {
+    background-color:  rgb(160, 221, 216);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body-container {
+    flex: 1;
+}
+
+
+.card {
+    width: 400px;
+    padding: 30px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: 0.3s;
+    font-family: sans-serif;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card.small {
+    width: 150px;
+    padding: 15px;
+    font-weight: bold;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+
